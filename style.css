@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    padding-bottom:50px;
+    /* border: 1px solid black; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0; */
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    position: fixed;
+    background: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 20px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul{
+    display: flex;
+   list-style-type: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero{
+   background-image: url(https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    z-index: -2;
+}
+
+.hero::before{
+    /* background-image: url(https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260); */
+    content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     /* background-color: rgba(20, 50, 60, 0.4); */
+     background-color: rgba(0, 0, 0, 0.3);
+     height: 100%;
+     z-index: -1;
+     /* background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom center; */
+     /* color: #fff; */
+     /* display: flex; */
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* text-align: center; */
+     /* position: relative; */
+     /* margin-bottom: 40px; */
+ }
+
+ .hero h2{
+     font-size: 40px;
+     margin: -20px 0 20px;
+ }
+
+ .hero p{
+     font-size: 20px;
+     line-height: 1px;
+ }
+
+
+ .content h2, .content h3{
+     font-size: 120%;
+     margin: 20px 0;
+ }
+
+ .content p{
+     color: #555;
+     line-height: 1.5em;
+     letter-spacing: 1.5px;
+ }
